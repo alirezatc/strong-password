@@ -2,7 +2,7 @@
 A simple method that takes a password and checks if it is strong.
 
 The function takes a string as the argument and checks to see whether it meets 5 criteria
-- Its length is at least.
+- Its length is at least 6.
 - It contains at least one digit.
 - It contains at least one lowercase English character.
 - It contains at least one uppercase English character.
