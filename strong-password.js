@@ -1,6 +1,4 @@
-const password = '111Aa@1';
-
-function passChecker(n, password) {
+function passChecker(password) {
     // Return the minimum number of characters to make the password strong
     var result = 0;
     var problems =  4;
@@ -14,8 +12,7 @@ function passChecker(n, password) {
         return result;
     } else {
         var newArr = password.split('');
-        console.log(newArr);
-        
+        //console.log(newArr);
         function hasCharacter(argument) {
             return newArr.includes(argument);
         }
@@ -26,7 +23,6 @@ function passChecker(n, password) {
                 problems--;
                 break;
             }
-
         }
         for(var i = 0; i < lower_case.length ; i++){
             //console.log(numbers[i])
@@ -35,7 +31,6 @@ function passChecker(n, password) {
                 problems--;
                 break;
             }
-
         }
         for(var i = 0; i < upper_case.length ; i++){
             //console.log(numbers[i])
@@ -53,10 +48,9 @@ function passChecker(n, password) {
                 problems--;
                 break;
             }
-
         }
         return problems;
-
     }
 }
-console.log(passChecker(6, password));
+const password = 'asdasa1A@';
+console.log(passChecker(password));
